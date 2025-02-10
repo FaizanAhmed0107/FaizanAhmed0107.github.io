@@ -4,7 +4,7 @@ This repository showcases my skills and experience as a web developer, built usi
 
 **Live Demo:**
 
-Visit my portfolio at [https://mrunknown101331.github.io](https://mrunknown101331.github.io)
+Visit my portfolio at [https://faizanahmed0107.github.io](https://faizanahmed0107.github.io)
 
 **Features:**
 
@@ -19,6 +19,3 @@ Feel free to reach out to me for collaborations or job opportunities:
 
 * Email: faizanahmed0107@gmail.com
 * LinkedIn: [www.linkedin.com/in/faizan-ahmed-a947791b0](https://www.linkedin.com/in/faizan-ahmed-a947791b0)
- AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
