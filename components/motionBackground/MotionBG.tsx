@@ -52,11 +52,11 @@ const motionBG = () => {
             </svg>
 
             <svg style={{ display: "none" }}>
-                <filter id="noiseFilter">
+                <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse">
                     <feTurbulence
                         type='fractalNoise'
-                        baseFrequency='1.5'
-                        numOctaves='6'
+                        baseFrequency='0.8'
+                        numOctaves='2'
                         stitchTiles='stitch' />
                     <feBlend
                         mode="multiply"

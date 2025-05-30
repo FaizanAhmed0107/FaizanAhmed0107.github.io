@@ -55,7 +55,7 @@
 }
 
 .gradientBg {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -76,13 +76,13 @@
 .gradientsContainer {
     filter: url(#goo) blur(40px);
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .gradientNoise {
     filter: url(#noiseFilter);
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .gradientsContainer .g1 {
