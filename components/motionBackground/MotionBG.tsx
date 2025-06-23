@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import styles from "./MotionBG.module.css";
 
-const motionBG = () => {
+const MotionBG = () => {
     const interactiveRef = useRef<HTMLDivElement>(null);
     const animationFrameId = useRef<number | null>(null);
 
@@ -82,4 +82,4 @@ const motionBG = () => {
     );
 };
 
-export default motionBG;
+export default MotionBG;
