@@ -1,0 +1,148 @@
+{
+  "name": "Faizan Ahmed",
+  "cgpa": "9.33",
+  "year": "Fourth",
+  "address": "Jamshedpur, Jharkhand, India",
+  "email": "faizanahmed0107@gmail.com",
+  "languages": "English, Hindi",
+  "roles": [
+    "Blockchain developer",
+    "Full Stack Developer",
+    "MERN Developer",
+    "Android Developer",
+    "Problem Solver"
+  ],
+  "services": [
+    {
+      "icon": "fullstack.svg",
+      "name": "Full Stack Development",
+      "desc": "Building dynamic web applications with React for the frontend and Node.js/Express for the backend, ensuring seamless user experiences."
+    },
+    {
+      "icon": "blockchain.svg",
+      "name": "Blockchain Development",
+      "desc": "Creating decentralized applications using blockchain technology for secure, transparent, and efficient digital ecosystems."
+    },
+    {
+      "icon": "android.svg",
+      "name": "Android App Development",
+      "desc": "Building modern Android applications using Kotlin and Jetpack Compose, prioritizing user-centric design and optimal performance."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Problem Solving(Basic)",
+      "desc": "certificate by HackerRank on clearing the assessment in this skill",
+      "link": "https://www.hackerrank.com/certificates/ee85625a3cdd"
+    },
+    {
+      "name": "Java(Basic)",
+      "desc": "certificate by HackerRank on clearing the assessment in this skill",
+      "link": "https://www.hackerrank.com/certificates/1899f21cefc2"
+    },
+    {
+      "name": "Python(Basic)",
+      "desc": "certificate by HackerRank on clearing the assessment in this skill",
+      "link": "https://www.hackerrank.com/certificates/69387909c353"
+    },
+    {
+      "name": "SQL(Basic)",
+      "desc": "certificate by HackerRank on clearing the assessment in this skill",
+      "link": "https://www.hackerrank.com/certificates/f5be148ed032"
+    },
+    {
+      "name": "NPTEL Online Certification",
+      "desc": "Design and Analysis of Algorithm (Secured Top 5% Position)",
+      "link": "https://drive.google.com/file/d/167Vav6QwPOyfVhKyChjDahfJy3J0_1Lp/view"
+    },
+    {
+      "name": "The Serverless Workshop",
+      "desc": "Workshop on Serverless Amazon web Services by AWS user group Bhubaneswar",
+      "link": "https://drive.google.com/file/d/167klw87aMV9aAENM1mR-BqpxbGv65Ka-/view"
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Java",
+      "C",
+      "JavaScript",
+      "Solidity",
+      "Kotlin",
+      "Python"
+    ],
+    "Front End": [
+      "Next.js",
+      "React"
+    ],
+    "Back End": [
+      "Next.js",
+      "Node.js",
+      "Express"
+    ],
+    "Database": [
+      "MongoDB",
+      "SQL Plus(Oracle)"
+    ],
+    "Blockchain": [
+      "Ethereum (Solidity)",
+      "Web3.js",
+      "Smart Contracts Development"
+    ],
+    "App Development": [
+      "Jetpack Compose(Kotlin)"
+    ],
+    "Cloud Technologies": [
+      "Google Cloud"
+    ]
+  },
+  "projects": [
+    {
+      "name": "SmileChain",
+      "below": "MERN + Web3 Decentralized App",
+      "desc": "Developed a blockchain-powered Website that rewards users for their smiles. Integrated AI for smile detection and Ethereum smart contracts to award Ether for qualifying smiles. Built with React, Node.js, and MongoDB, combining AI and blockchain for a fun and engaging user experience."
+    },
+    {
+      "name": "ClipFlow",
+      "below": "Real-time Clipboard & File Sharing",
+      "desc": "Developed an online clipboard that allows users to store and retrieve text and files using a unique, auto-generated ID. Built with Next.js, MongoDB for metadata storage, and integrated the Google Drive API for file storage. The application ensures persistent, real-time data access without requiring user authentication."
+    },
+    {
+      "name": "Contact Manager",
+      "below": "with user authentication",
+      "desc": "A secure web application for user authentication and personal contact management. Users can register, log in, and manage their own contact lists, with data stored in a MongoDB database. Implemented the frontend using React and the backend with Node.js, Express, and JWT-based authentication."
+    },
+    {
+      "name": "NIST Patrika",
+      "below": "Front End only",
+      "desc": "Designed and developed the frontend of a web-based newsletter platform to showcase institutional news and articles. Built using React, with a focus on responsive design, intuitive navigation, and dynamic content presentation."
+    },
+    {
+      "name": "Personal Portfolio",
+      "below": "Front End Development",
+      "desc": "Developed a dynamic and responsive personal CV website using React. All data is sourced from a JSON file, enabling effortless content management and updates. The site features intuitive navigation, smooth transitions, and a clean UI/UX design.Optimized for various devices and screen sizes to ensure a consistent user experience."
+    },
+    {
+      "name": "Flicker",
+      "below": "IOT based LED colour changing Android APP",
+      "desc": "Created an Android application using Jetpack Compose and Google Firebase to manage LED lighting systems. Hardware implementation utilizes an ESP32 microcontroller for color control, enabling real-time adjustments and dynamic lighting effects."
+    },
+    {
+      "name": "PokerPay",
+      "below": "Android App using Google Firebase",
+      "desc": "Developed a fully operational Android application to simulate the transaction of points between players during real poker matches. The app supports multiple games running in parallel seamlessly, ensuring smooth functionality and reliability. Built with Jetpack Compose and integrated with Google Firebase for real-time data synchronization."
+    },
+    {
+      "name": "Tic Tac Toe Game",
+      "below": "Front End Development",
+      "desc": "Built a Tic Tac Toe game using HTML for structure, CSS for styling, and JavaScript for game logic. Implemented an algorithm to strategically select the computer's moves based on the current board configuration. Features responsive design for optimal play on different screen sizes. Includes game state management and win/draw condition detection."
+    }
+  ],
+  "about": "As a dedicated B.Tech student, I am seeking an entry-level opportunity where I can apply my skills & enhance learning in the field of work. With proficiency in languages such as C, Java, Kotlin, and Python, I am committed to leveraging my knowledge to contribute effectively to real-world projects.",
+  "why_me": "I bring a strong foundation in problem-solving and communication, coupled with hands-on experience in developing innovative web, mobile, and blockchain-based applications. My ability to learn quickly and adapt to new tools, makes me a valuable team player ready to tackle complex challenges and drive innovation.",
+  "education": "NIST Institute of Science and Technology\nBachelor of Technology (B.Tech)\nCurrent CGPA: ${cgpa}\nCurrently in  ${year} Year",
+  "developmentSkill": "Full-stack web application, Blockchain application, IoT project, and Android application development experience. Skilled in front-end, back-end, and cloud technologies, including Firebase and MongoDB, for dynamic and secure applications with real-time databases. Experienced in blockchain technologies such as Ethereum, Solidity, and Web3.js. Proficient in Android development using Java and Kotlin, with a focus on building efficient and scalable mobile applications. Proven ability to integrate diverse platforms for high-performance, cross-functional applications.",
+  "contact": "I'm always looking for exciting collaborations and new projects. If you're facing a creative challenge or have an idea you'd like to develop, I'd be thrilled to discuss how I can help bring it to life. I'm available for hire on a freelance basis and am also open to exploring full-time opportunities. Feel free to email me with any questions or opportunities you'd like to discuss. I'm open to various types of projects and collaborations.",
+  "linkedin": "https://www.linkedin.com/in/faizan-ahmed-a947791b0",
+  "github": "https://github.com/FaizanAhmed0107",
+  "cv": "https://drive.google.com/file/d/1P6K9-mJUzy_bE8Og2NUhigSEKfWCTizv/view?usp=drive_link"
+}
