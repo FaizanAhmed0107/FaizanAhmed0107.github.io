@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 function Home(props) {
     return (
+
         <section className={styles.body} id='home'>
             <p className={styles.first}>Hello, This is</p>
             <p className={styles.name}>{props.data.name}</p>
