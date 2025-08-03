@@ -1,7 +1,7 @@
 {
   "name": "Faizan Ahmed",
-  "cgpa": "9.37",
-  "year": "Third",
+  "cgpa": "9.33",
+  "year": "Fourth",
   "address": "Jamshedpur, Jharkhand, India",
   "email": "faizanahmed0107@gmail.com",
   "languages": "English, Hindi",
@@ -63,15 +63,19 @@
   ],
   "skills": {
     "Languages": [
-      "C",
       "Java",
+      "C",
+      "JavaScript",
+      "Solidity",
       "Kotlin",
       "Python"
     ],
     "Front End": [
+      "Next.js",
       "React"
     ],
     "Back End": [
+      "Next.js",
       "Node.js",
       "Express"
     ],
@@ -88,7 +92,7 @@
       "Jetpack Compose(Kotlin)"
     ],
     "Cloud Technologies": [
-      "Google Firebase"
+      "Google Cloud"
     ]
   },
   "projects": [
@@ -96,6 +100,11 @@
       "name": "SmileChain",
       "below": "MERN + Web3 Decentralized App",
       "desc": "Developed a blockchain-powered Website that rewards users for their smiles. Integrated AI for smile detection and Ethereum smart contracts to award Ether for qualifying smiles. Built with React, Node.js, and MongoDB, combining AI and blockchain for a fun and engaging user experience."
+    },
+    {
+      "name": "ClipFlow",
+      "below": "Real-time Clipboard & File Sharing",
+      "desc": "Developed an online clipboard that allows users to store and retrieve text and files using a unique, auto-generated ID. Built with Next.js, MongoDB for metadata storage, and integrated the Google Drive API for file storage. The application ensures persistent, real-time data access without requiring user authentication."
     },
     {
       "name": "Contact Manager",
