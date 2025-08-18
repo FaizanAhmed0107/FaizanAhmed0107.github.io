@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 
 interface Props {
     data: {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         [key: string]: any;
     };
 }

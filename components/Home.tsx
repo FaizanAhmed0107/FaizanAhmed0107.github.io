@@ -1,7 +1,6 @@
 "use client";
 
 import MotionBG from "./motionBackground/MotionBG";
-import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -13,6 +12,7 @@ import ActionButtons from "./ActionButtons";
 interface HomeProps {
     data: {
         roles?: string[];
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         [key: string]: any;
     };
 }

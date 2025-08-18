@@ -6,10 +6,10 @@ import processData from "@/lib/processData"
 
 export default function Page() {
 
-  let processedData: {
+  const processedData: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [key: string]: any;
-  };
-  processedData = processData(data);
+  } = processData(data);
 
   return (
     <>

@@ -6,6 +6,7 @@ import { motion, useInView, useAnimation, Variants } from 'framer-motion';
 
 interface Props {
     data: {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         [key: string]: any;
     };
 }
