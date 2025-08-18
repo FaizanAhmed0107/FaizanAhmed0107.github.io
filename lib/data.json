@@ -1,0 +1,70 @@
+{
+    "name": "Faizan Ahmed",
+    "more": "CSE B.Tech Student",
+    "cgpa": "9.33",
+    "year": "Fourth",
+    "address": "Jamshedpur, Jharkhand, India",
+    "email": "faizanahmed0107@gmail.com",
+    "languages": "English, Hindi",
+    "education": {
+        "degree": "Bachelor of Technology (B.Tech) in Computer Science & Engineering",
+        "university": "NIST University, Berhampur, Odisha",
+        "cgpa": "${cgpa}",
+        "duration": "2022 - 2026"
+    },
+    "roles": [
+        "Blockchain developer",
+        "Full Stack Developer",
+        "MERN Developer",
+        "Android Developer",
+        "Problem Solver"
+    ],
+    "skills": {
+        "Languages": [
+            "Java",
+            "C",
+            "JavaScript",
+            "Solidity",
+            "Kotlin",
+            "Python"
+        ],
+        "Front End": [
+            "Next.js",
+            "React"
+        ],
+        "Back End": [
+            "Next.js",
+            "Node.js",
+            "Express"
+        ],
+        "Database": [
+            "MongoDB",
+            "SQL Plus(Oracle)"
+        ],
+        "Blockchain": [
+            "Ethereum (Solidity)",
+            "Web3.js",
+            "Smart Contracts Development"
+        ],
+        "App Development": [
+            "Jetpack Compose(Kotlin)"
+        ],
+        "Cloud Technologies": [
+            "Google Cloud"
+        ],
+        "Tools": [
+            "Git & GitHub",
+            "Figma",
+            "Postman",
+            "VS Code"
+        ]
+    },
+    "about": "As a self-motivated engineering student, I am curious about new technologies and their practical applications. With a strong foundation in languages like Java, C, JavaScript, and Python , and experience in web and Blockchain development , I am committed to applying my skills and leadership qualities to contribute to real-world projects.",
+    "developmentSkill": "Full-stack web application, Blockchain application, IoT project, and Android application development experience. Skilled in front-end, back-end, and cloud technologies, including Firebase and MongoDB, for dynamic and secure applications with real-time databases. Experienced in blockchain technologies such as Ethereum, Solidity, and Web3.js. Proficient in Android development using Java and Kotlin, with a focus on building efficient and scalable mobile applications. Proven ability to integrate diverse platforms for high-performance, cross-functional applications.",
+    "contact": "I'm always looking for exciting collaborations and new projects. If you're facing a creative challenge or have an idea you'd like to develop, I'd be thrilled to discuss how I can help bring it to life. I'm available for hire on a freelance basis and am also open to exploring full-time opportunities. Feel free to email me with any questions or opportunities you'd like to discuss. I'm open to various types of projects and collaborations.",
+    "linkedin": "https://www.linkedin.com/in/faizan-ahmed-a947791b0",
+    "github": "https://github.com/FaizanAhmed0107",
+    "leetcode": "https://leetcode.com/u/Faizan-Ahmed-0107/",
+    "hackerrank": "https://www.hackerrank.com/profile/faizanahmed0107",
+    "cv": "https://drive.google.com/file/d/1P6K9-mJUzy_bE8Og2NUhigSEKfWCTizv/view?usp=drive_link"
+}
