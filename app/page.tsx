@@ -3,7 +3,9 @@ import Home from "../components/Home";
 import AboutMe from "@/components/About";
 import data from "@/lib/data.json";
 import processData from "@/lib/processData"
-import ProjectsSection from "@/components/Projects";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 export default function Page() {
 
@@ -17,9 +19,9 @@ export default function Page() {
       <TopBar />
       <Home data={processedData} />
       <AboutMe data={processedData} />
-      <ProjectsSection data={processedData} />
-      <div className="h-screen">Hi</div>
-      <div className="h-screen">By</div>
+      <Projects data={processedData} />
+      <Experience data={processedData} />
+      <Contact data={processedData} />
     </>
   );
 }

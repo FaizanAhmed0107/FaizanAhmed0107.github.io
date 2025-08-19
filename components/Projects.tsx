@@ -235,6 +235,7 @@ const ProjectsSection = ({ data }: Props) => {
                                             {selectedProject.description}
                                         </p>
                                         <div>
+                                            {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                                             <h4 className="font-semibold text-gray-300 mb-3">// Tech Stack</h4>
                                             <div className="flex flex-wrap gap-2">
                                                 {selectedProject.techStack.map(tech => (
@@ -252,7 +253,6 @@ const ProjectsSection = ({ data }: Props) => {
                 </div>
             </div>
 
-            <div className="glowing-divider-bottom" />
 
             <style jsx global>{`
                 /* Your global styles (glitch, glowing-divider) remain the same */

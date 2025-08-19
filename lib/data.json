@@ -169,6 +169,19 @@
             "mockupType": "laptop"
         }
     ],
+    "experiences": [
+        {
+            "id": 1,
+            "role": "Research Intern",
+            "organization": "IIT Bhubaneswar - School of Electrical Sciences",
+            "duration": "May 2025 - July 2025",
+            "location": "Bhubaneswar, Odisha",
+            "description": [
+                "Developed CUDA applications utilizing global, shared, and distributed shared memory for parallel programming using a GPU accelerator.",
+                "Analyzed the influence of operating systems on execution time variance in high-performance computing tasks."
+            ]
+        }
+    ],
     "about": "As a self-motivated engineering student, I am curious about new technologies and their practical applications. With a strong foundation in languages like Java, C, JavaScript, and Python , and experience in web and Blockchain development , I am committed to applying my skills and leadership qualities to contribute to real-world projects.",
     "contact": "I'm always looking for exciting collaborations and new projects. If you're facing a creative challenge or have an idea you'd like to develop, I'd be thrilled to discuss how I can help bring it to life. I'm available for hire on a freelance basis and am also open to exploring full-time opportunities. Feel free to email me with any questions or opportunities you'd like to discuss. I'm open to various types of projects and collaborations.",
     "linkedin": "https://www.linkedin.com/in/faizan-ahmed-a947791b0",
