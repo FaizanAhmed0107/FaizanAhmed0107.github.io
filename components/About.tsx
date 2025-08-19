@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Github, Linkedin, Mail, Folder, File } from 'lucide-react';
-import { motion, useInView, useAnimation, Variants } from 'framer-motion';
+import { motion, useInView, useAnimation, Variants, useMotionValue, animate } from 'framer-motion';
 
 interface Props {
     data: {
@@ -99,6 +99,40 @@ const TerminalWindow: React.FC<TerminalWindowProps> = ({ title, children }) => {
 };
 
 
+// Draggable wrapper component for the terminal
+interface DraggableTerminalProps extends TerminalWindowProps {
+    className?: string;
+    variants: Variants;
+}
+
+const DraggableTerminalWindow: React.FC<DraggableTerminalProps> = ({ title, children, className, variants }) => {
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
+
+    const handleDragEnd = () => {
+        animate(x, 0, { type: 'spring', stiffness: 400, damping: 25, mass: 1 });
+        animate(y, 0, { type: 'spring', stiffness: 400, damping: 25, mass: 1 });
+    };
+
+    return (
+        <motion.div
+            className={className}
+            variants={variants}
+            drag
+            onDragEnd={handleDragEnd}
+            style={{ x, y, cursor: 'grab' }}
+            whileDrag={{ cursor: 'grabbing', scale: 1.02, zIndex: 50 }}
+            dragConstraints={{ top: -50, left: -50, right: 50, bottom: 50 }}
+            dragTransition={{ bounceStiffness: 600, bounceDamping: 15 }}
+        >
+            <TerminalWindow title={title}>
+                {children}
+            </TerminalWindow>
+        </motion.div>
+    );
+};
+
+
 const AboutSection = ({ data }: Props) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -145,10 +179,13 @@ const AboutSection = ({ data }: Props) => {
     return (
         <section id="about" className="relative bg-gray-900 text-white py-20 sm:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
 
-            {/* Glowing Divider */}
+            {/* --- Background glowing blobs --- */}
+            <div className="absolute top-0 -left-4 w-72 h-72 bg-green-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse" />
+            <div className="absolute top-1/2 -right-4 w-72 h-72 bg-blue-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-4000" />
+
             <div className="glowing-divider" />
 
-            <div className="relative max-w-6xl mx-auto flex flex-col items-center">
+            <div className="relative max-w-6xl mx-auto flex flex-col items-center z-10">
                 <motion.h2
                     className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-center"
                     initial={{ opacity: 0, y: 20 }}
@@ -176,70 +213,62 @@ const AboutSection = ({ data }: Props) => {
                     initial="hidden"
                     animate={controls}
                 >
-                    {/* Terminal Windows */}
-                    <motion.div className="w-full md:w-3/5 lg:w-1/2" variants={itemVariants}>
-                        <TerminalWindow title="~/bio.txt">
-                            <Command cmd="whoami"><p>{user.name} - {user.role}</p></Command>
-                            <Command cmd="cat ./bio.txt"><p className="text-gray-300">{user.bio.replace(/'/g, "\u2019")}</p></Command>
-                            <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.1s" /></div>
-                        </TerminalWindow>
-                    </motion.div>
-                    <motion.div className="w-full sm:w-1/2 md:w-2/5 lg:w-1/3" variants={itemVariants}>
-                        <TerminalWindow title="./connect">
-                            <Command cmd="./connect">
-                                <div className="flex flex-col space-y-2 mt-2">
-                                    <a href={user.links.github} target="_blank" rel="noopener noreferrer" className="flex items-center text-yellow-400 hover:underline"><Github size={16} className="mr-2" /> GitHub</a>
-                                    <a href={user.links.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center text-yellow-400 hover:underline"><Linkedin size={16} className="mr-2" /> LinkedIn</a>
-                                    <a href={user.links.email} className="flex items-center text-yellow-400 hover:underline"><Mail size={16} className="mr-2" /> Email</a>
-                                </div>
-                            </Command>
-                            <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.4s" /></div>
-                        </TerminalWindow>
-                    </motion.div>
-                    <motion.div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5" variants={itemVariants}>
-                        <TerminalWindow title="~/academics/.git">
-                            <Command cmd="git log --academics">
-                                <div className="font-mono text-sm">
-                                    <p>
-                                        <span className="text-yellow-400">commit QSBkZXYgY3JhZnRpbmcgZGlnaXRhbCB0aGluZ3M=</span>
-                                    </p>
+                    <DraggableTerminalWindow className="w-full md:w-3/5 lg:w-1/2" variants={itemVariants} title="~/bio.txt">
+                        <Command cmd="whoami"><p>{user.name} - {user.role}</p></Command>
+                        <Command cmd="cat ./bio.txt"><p className="text-gray-300">{user.bio.replace(/'/g, "\u2019")}</p></Command>
+                        <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.1s" /></div>
+                    </DraggableTerminalWindow>
 
-                                    <div className="mt-4 ml-4">
-                                        <p className="font-bold">{user.education.degree}</p>
-                                        <p className="mt-2">{user.education.university}</p>
-                                        <p>Current CGPA: {user.education.cgpa}</p>
-                                        <p className="text-gray-400">{user.education.duration}</p>
+                    <DraggableTerminalWindow className="w-full sm:w-1/2 md:w-2/5 lg:w-1/3" variants={itemVariants} title="./connect">
+                        <Command cmd="./connect">
+                            <div className="flex flex-col space-y-2 mt-2">
+                                <a href={user.links.github} target="_blank" rel="noopener noreferrer" className="flex items-center text-yellow-400 hover:underline"><Github size={16} className="mr-2" /> GitHub</a>
+                                <a href={user.links.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center text-yellow-400 hover:underline"><Linkedin size={16} className="mr-2" /> LinkedIn</a>
+                                <a href={user.links.email} className="flex items-center text-yellow-400 hover:underline"><Mail size={16} className="mr-2" /> Email</a>
+                            </div>
+                        </Command>
+                        <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.4s" /></div>
+                    </DraggableTerminalWindow>
+
+                    <DraggableTerminalWindow className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5" variants={itemVariants} title="~/academics/.git">
+                        <Command cmd="git log --academics">
+                            <div className="font-mono text-sm">
+                                <p>
+                                    <span className="text-yellow-400">commit QSBkZXYgY3JhZnRpbmcgZGlnaXRhbCB0aGluZ3M=</span>
+                                </p>
+                                <div className="mt-4 ml-4">
+                                    <p className="font-bold">{user.education.degree}</p>
+                                    <p className="mt-2">{user.education.university}</p>
+                                    <p>Current CGPA: {user.education.cgpa}</p>
+                                    <p className="text-gray-400">{user.education.duration}</p>
+                                </div>
+                            </div>
+                        </Command>
+                        <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.2s" /></div>
+                    </DraggableTerminalWindow>
+
+                    <DraggableTerminalWindow className="w-full md:w-3/5 lg:w-1/2" variants={itemVariants} title="~/status_check">
+                        <Command cmd={user.status.command}>
+                            <div className="flex flex-col text-left">
+                                {user.status.output.map((line, index) => (<p key={index} className="text-gray-300">{line}</p>))}
+                            </div>
+                        </Command>
+                        <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.5s" /></div>
+                    </DraggableTerminalWindow>
+
+                    <DraggableTerminalWindow className="w-full lg:w-4/5" variants={itemVariants} title="~/skills">
+                        <Command cmd="ls -R ./skills">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                                {Object.entries(user.skills).map(([category, skillsList]) => (
+                                    <div key={category} className="mt-2">
+                                        <div className="flex items-center"><Folder size={16} className="text-blue-400 mr-2" /><p className="font-bold text-blue-400">{category}/</p></div>
+                                        <div className="pl-6">{skillsList.map((skill: string) => (<div key={skill} className="flex items-center"><File size={16} className="text-green-400 mr-2" /><p>{skill}</p></div>))}</div>
                                     </div>
-                                </div>
-                            </Command>
-                            <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.2s" /></div>
-                        </TerminalWindow>
-                    </motion.div>
-                    <motion.div className="w-full md:w-3/5 lg:w-1/2" variants={itemVariants}>
-                        <TerminalWindow title="~/status_check">
-                            <Command cmd={user.status.command}>
-                                <div className="flex flex-col text-left">
-                                    {user.status.output.map((line, index) => (<p key={index} className="text-gray-300">{line}</p>))}
-                                </div>
-                            </Command>
-                            <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.5s" /></div>
-                        </TerminalWindow>
-                    </motion.div>
-                    <motion.div className="w-full lg:w-4/5" variants={itemVariants}>
-                        <TerminalWindow title="~/skills">
-                            <Command cmd="ls -R ./skills">
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-                                    {Object.entries(user.skills).map(([category, skillsList]) => (
-                                        <div key={category} className="mt-2">
-                                            <div className="flex items-center"><Folder size={16} className="text-blue-400 mr-2" /><p className="font-bold text-blue-400">{category}/</p></div>
-                                            <div className="pl-6">{skillsList.map((skill: string) => (<div key={skill} className="flex items-center"><File size={16} className="text-green-400 mr-2" /><p>{skill}</p></div>))}</div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </Command>
-                            <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.3s" /></div>
-                        </TerminalWindow>
-                    </motion.div>
+                                ))}
+                            </div>
+                        </Command>
+                        <div className="flex items-center mt-2"><span className="text-green-400">user@portfolio:</span><span className="text-blue-400">~</span><span className="text-gray-300">$</span><Cursor delay="0.3s" /></div>
+                    </DraggableTerminalWindow>
                 </motion.div>
             </div>
 
@@ -255,9 +284,13 @@ const AboutSection = ({ data }: Props) => {
                     width: 80%;
                     max-width: 1000px;
                     height: 1px;
-                    background-color: rgba(0, 255, 255, 0.5); /* A cyan color */
+                    background-color: rgba(0, 255, 255, 0.5);
                     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
                                 0 0 20px rgba(0, 255, 255, 0.3);
+                }
+
+                .animation-delay-4000 {
+                    animation-delay: 4s;
                 }
             `}</style>
         </section>

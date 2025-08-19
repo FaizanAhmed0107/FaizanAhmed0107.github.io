@@ -2,7 +2,6 @@
     "name": "Faizan Ahmed",
     "more": "CSE B.Tech Student",
     "cgpa": "9.33",
-    "year": "Fourth",
     "address": "Jamshedpur, Jharkhand, India",
     "email": "faizanahmed0107@gmail.com",
     "languages": "English, Hindi",
@@ -59,8 +58,118 @@
             "VS Code"
         ]
     },
+    "projects": [
+        {
+            "id": 1,
+            "title": "SmileChain",
+            "description": "A MERN + Web3-based decentralized application that rewards users for their smiles. Leveraging AI and blockchain, it provides an engaging experience by turning smiles into valuable rewards, promoting positivity.",
+            "techStack": [
+                "React",
+                "FaceAPI.js",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Solidity",
+                "Truffle",
+                "Ganache"
+            ],
+            "githubUrl": "https://github.com/faizanahmed0107/SmileChain",
+            "liveUrl": "",
+            "images": [
+                "/images/smilechain-project.png"
+            ],
+            "mockupType": "laptop"
+        },
+        {
+            "id": 2,
+            "title": "ClipFlow",
+            "description": "An online clipboard built with Next.js that allows users to store and retrieve text and files using a unique, auto-generated refid. Features real-time syncing and a minimalist UI.",
+            "techStack": [
+                "Next.js",
+                "Tailwind CSS",
+                "DaisyUI",
+                "Node.js",
+                "MongoDB",
+                "Google Drive"
+            ],
+            "githubUrl": "https://github.com/FaizanAhmed0107/ClipFlow",
+            "liveUrl": "https://clipflow.vercel.app",
+            "images": [
+                "/images/clipFlow.png"
+            ],
+            "mockupType": "laptop"
+        },
+        {
+            "id": 3,
+            "title": "Personal Contact Manager",
+            "description": "A full-stack MERN application for managing personal contacts. It allows users to register, login, create, view, edit, and delete their personal contacts with JWT authentication.",
+            "techStack": [
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Mongoose",
+                "JWT"
+            ],
+            "githubUrl": "https://github.com/mrunknown101331/ContactManage",
+            "liveUrl": "https://contactmanage-1.onrender.com/",
+            "images": [
+                "/images/clipFlow-small.png"
+            ],
+            "mockupType": "laptop"
+        },
+        {
+            "id": 4,
+            "title": "Flicker",
+            "description": "An Android app and ESP32 firmware to remotely control RGB LED strips via Firebase. It features multiple lighting modes and real-time updates for both LEDs and other connected appliances.",
+            "techStack": [
+                "Android (Kotlin)",
+                "Jetpack Compose",
+                "ESP32",
+                "Arduino (C++)",
+                "Firebase Realtime DB"
+            ],
+            "githubUrl": "https://github.com/FaizanAhmed0107/RGB_Remote_App",
+            "images": [
+                "/images/phone.jpg",
+                "/images/phone.jpg"
+            ],
+            "mockupType": "mobile"
+        },
+        {
+            "id": 5,
+            "title": "PokerPay",
+            "description": "An Android companion app for live poker nights that handles virtual chip management, allowing players to focus on the game. Features real-time bet tracking and game creation.",
+            "techStack": [
+                "Android (Kotlin)",
+                "Jetpack Compose",
+                "Firebase Realtime DB"
+            ],
+            "githubUrl": "https://github.com/FaizanAhmed0107/PokerPay",
+            "images": [
+                "/images/smilechain-project.png"
+            ],
+            "mockupType": "mobile"
+        },
+        {
+            "id": 6,
+            "title": "Tic Tac Toe Web App",
+            "description": "A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. It features a single-player mode against an unbeatable AI opponent that uses the minimax algorithm with alpha-beta pruning.",
+            "techStack": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Minimax Algorithm"
+            ],
+            "githubUrl": "https://github.com/FaizanAhmed0107/TicTacToe",
+            "liveUrl": "https://faizanahmed0107.github.io/TicTacToe/",
+            "images": [
+                "/images/smilechain-project.png"
+            ],
+            "mockupType": "laptop"
+        }
+    ],
     "about": "As a self-motivated engineering student, I am curious about new technologies and their practical applications. With a strong foundation in languages like Java, C, JavaScript, and Python , and experience in web and Blockchain development , I am committed to applying my skills and leadership qualities to contribute to real-world projects.",
-    "developmentSkill": "Full-stack web application, Blockchain application, IoT project, and Android application development experience. Skilled in front-end, back-end, and cloud technologies, including Firebase and MongoDB, for dynamic and secure applications with real-time databases. Experienced in blockchain technologies such as Ethereum, Solidity, and Web3.js. Proficient in Android development using Java and Kotlin, with a focus on building efficient and scalable mobile applications. Proven ability to integrate diverse platforms for high-performance, cross-functional applications.",
     "contact": "I'm always looking for exciting collaborations and new projects. If you're facing a creative challenge or have an idea you'd like to develop, I'd be thrilled to discuss how I can help bring it to life. I'm available for hire on a freelance basis and am also open to exploring full-time opportunities. Feel free to email me with any questions or opportunities you'd like to discuss. I'm open to various types of projects and collaborations.",
     "linkedin": "https://www.linkedin.com/in/faizan-ahmed-a947791b0",
     "github": "https://github.com/FaizanAhmed0107",
