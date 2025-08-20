@@ -1,5 +1,0 @@
---text: rgb(241, 229, 229);
---background: rgb(27, 27, 27);
---primary: rgb(176, 165, 207);
---secondary: rgb(57, 108, 106);
---accent: rgb(90, 92, 168);
