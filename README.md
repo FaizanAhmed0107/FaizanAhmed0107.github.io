@@ -44,7 +44,7 @@ Make sure you have Node.js (v18.x or later) and npm/yarn/pnpm installed on your 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [https://github.com/FaizanAhmed0107/FaizanAhmed0107.git][(https://github.com/your-username/your-repo-name.git](https://github.com/FaizanAhmed0107/FaizanAhmed0107.git))
     cd your-repo-name
     ```
 
