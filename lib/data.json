@@ -76,7 +76,7 @@
             "githubUrl": "https://github.com/faizanahmed0107/SmileChain",
             "liveUrl": "",
             "images": [
-                "/images/smilechain-project.png"
+                "/images/Dashboard.png"
             ],
             "mockupType": "laptop"
         },
@@ -114,7 +114,7 @@
             "githubUrl": "https://github.com/mrunknown101331/ContactManage",
             "liveUrl": "https://contactmanage-1.onrender.com/",
             "images": [
-                "/images/clipFlow-small.png"
+                "/images/Contact.png"
             ],
             "mockupType": "laptop"
         },
@@ -131,8 +131,7 @@
             ],
             "githubUrl": "https://github.com/FaizanAhmed0107/RGB_Remote_App",
             "images": [
-                "/images/phone.jpg",
-                "/images/phone.jpg"
+                "/images/flicker.jpg"
             ],
             "mockupType": "mobile"
         },
@@ -147,7 +146,8 @@
             ],
             "githubUrl": "https://github.com/FaizanAhmed0107/PokerPay",
             "images": [
-                "/images/smilechain-project.png"
+                "/images/pokerPay2.jpg",
+                "/images/pokerPay1.jpg"
             ],
             "mockupType": "mobile"
         },
@@ -164,7 +164,7 @@
             "githubUrl": "https://github.com/FaizanAhmed0107/TicTacToe",
             "liveUrl": "https://faizanahmed0107.github.io/TicTacToe/",
             "images": [
-                "/images/smilechain-project.png"
+                "/images/TicTacToe.png"
             ],
             "mockupType": "laptop"
         }
