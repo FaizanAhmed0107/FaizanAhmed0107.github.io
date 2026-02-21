@@ -15,35 +15,41 @@
         "Blockchain developer",
         "Full Stack Developer",
         "MERN Developer",
-        "Android Developer",
-        "Problem Solver"
+        "Problem Solver",
+        "Android Developer"
     ],
     "skills": {
         "Languages": [
             "Java",
             "C",
+            "Python",
             "JavaScript",
+            "TypeScript",
             "Solidity",
-            "Kotlin",
-            "Python"
+            "Circom",
+            "Kotlin"
+        ],
+        "Back End": [
+            "Next.js",
+            "Node.js",
+            "Express",
+            "Spring Boot",
+            "Microservices Architecture (Spring Boot)"
         ],
         "Front End": [
             "Next.js",
             "React"
         ],
-        "Back End": [
-            "Next.js",
-            "Node.js",
-            "Express"
-        ],
         "Database": [
             "MongoDB",
-            "SQL Plus(Oracle)"
+            "SQL Plus(Oracle)",
+            "My SQL"
         ],
         "Blockchain": [
             "Ethereum (Solidity)",
             "Web3.js",
-            "Smart Contracts Development"
+            "Smart Contracts Development",
+            "Zero-Knowledge Proofs (Circom)"
         ],
         "App Development": [
             "Jetpack Compose(Kotlin)"
@@ -61,6 +67,31 @@
     "projects": [
         {
             "id": 1,
+            "title": "PrivChain",
+            "description": "A decentralized, privacy-preserving platform for issuing, storing, and verifying academic and professional credentials. It leverages Blockchain technology for immutable trust, IPFS for decentralized storage, and Zero-Knowledge Proofs (ZKP) for privacy-preserving verification.",
+            "techStack": [
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Wagmi",
+                "Viem",
+                "Solidity",
+                "Hardhat",
+                "Node.js",
+                "Circom",
+                "SnarkJS",
+                "Pinata",
+                "Supabase"
+            ],
+            "githubUrl": "https://github.com/FaizanAhmed0107/PrivChain",
+            "liveUrl": "",
+            "images": [
+                "/images/PrivChain.png"
+            ],
+            "mockupType": "laptop"
+        },
+        {
+            "id": 2,
             "title": "SmileChain",
             "description": "A MERN + Web3-based decentralized application that rewards users for their smiles. Leveraging AI and blockchain, it provides an engaging experience by turning smiles into valuable rewards, promoting positivity.",
             "techStack": [
@@ -81,7 +112,7 @@
             "mockupType": "laptop"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "ClipFlow",
             "description": "An online clipboard built with Next.js that allows users to store and retrieve text and files using a unique, auto-generated refid. Features real-time syncing and a minimalist UI.",
             "techStack": [
@@ -96,25 +127,6 @@
             "liveUrl": "https://clipflow.vercel.app",
             "images": [
                 "/images/clipFlow.png"
-            ],
-            "mockupType": "laptop"
-        },
-        {
-            "id": 3,
-            "title": "Personal Contact Manager",
-            "description": "A full-stack MERN application for managing personal contacts. It allows users to register, login, create, view, edit, and delete their personal contacts with JWT authentication.",
-            "techStack": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Mongoose",
-                "JWT"
-            ],
-            "githubUrl": "https://github.com/mrunknown101331/ContactManage",
-            "liveUrl": "https://contactmanage-1.onrender.com/",
-            "images": [
-                "/images/Contact.png"
             ],
             "mockupType": "laptop"
         },
@@ -150,23 +162,6 @@
                 "/images/pokerPay1.jpg"
             ],
             "mockupType": "mobile"
-        },
-        {
-            "id": 6,
-            "title": "Tic Tac Toe Web App",
-            "description": "A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. It features a single-player mode against an unbeatable AI opponent that uses the minimax algorithm with alpha-beta pruning.",
-            "techStack": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Minimax Algorithm"
-            ],
-            "githubUrl": "https://github.com/FaizanAhmed0107/TicTacToe",
-            "liveUrl": "https://faizanahmed0107.github.io/TicTacToe/",
-            "images": [
-                "/images/TicTacToe.png"
-            ],
-            "mockupType": "laptop"
         }
     ],
     "experiences": [
@@ -179,6 +174,17 @@
             "description": [
                 "Developed CUDA applications utilizing global, shared, and distributed shared memory for parallel programming using a GPU accelerator.",
                 "Analyzed the influence of operating systems on execution time variance in high-performance computing tasks."
+            ]
+        },
+        {
+            "id": 2,
+            "role": "Specialist Programmer Intern",
+            "organization": "Infosys",
+            "duration": "Jan 2026 - April 2026",
+            "location": "Mysuru, Karnataka, India",
+            "description": [
+                "Engaged in intensive training on full-stack development using Java, Spring Boot, and Spring Framework to build scalable enterprise solutions.",
+                "Collaborated within an Agile environment, participating in sprint planning and iterative development cycles to deliver high-quality software."
             ]
         }
     ],
