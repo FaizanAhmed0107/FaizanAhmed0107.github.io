@@ -166,6 +166,17 @@
     ],
     "experiences": [
         {
+            "id": 2,
+            "role": "Specialist Programmer Intern",
+            "organization": "Infosys",
+            "duration": "Jan 2026 - Present",
+            "location": "Mysuru, Karnataka, India",
+            "description": [
+                "Engaged in intensive training on full-stack development using Java, Spring Boot, and Spring Framework to build scalable enterprise solutions.",
+                "Collaborated within an Agile environment, participating in sprint planning and iterative development cycles to deliver high-quality software."
+            ]
+        },
+        {
             "id": 1,
             "role": "Research Intern",
             "organization": "IIT Bhubaneswar - School of Electrical Sciences",
@@ -174,17 +185,6 @@
             "description": [
                 "Developed CUDA applications utilizing global, shared, and distributed shared memory for parallel programming using a GPU accelerator.",
                 "Analyzed the influence of operating systems on execution time variance in high-performance computing tasks."
-            ]
-        },
-        {
-            "id": 2,
-            "role": "Specialist Programmer Intern",
-            "organization": "Infosys",
-            "duration": "Jan 2026 - April 2026",
-            "location": "Mysuru, Karnataka, India",
-            "description": [
-                "Engaged in intensive training on full-stack development using Java, Spring Boot, and Spring Framework to build scalable enterprise solutions.",
-                "Collaborated within an Agile environment, participating in sprint planning and iterative development cycles to deliver high-quality software."
             ]
         }
     ],
