@@ -84,7 +84,7 @@
                 "Supabase"
             ],
             "githubUrl": "https://github.com/FaizanAhmed0107/PrivChain",
-            "liveUrl": "",
+            "liveUrl": "https://priv-chain.vercel.app/",
             "images": [
                 "/images/PrivChain.png"
             ],
@@ -169,7 +169,7 @@
             "id": 2,
             "role": "Specialist Programmer Intern",
             "organization": "Infosys",
-            "duration": "Jan 2026 - Present",
+            "duration": "Jan 2026 - April 2026",
             "location": "Mysuru, Karnataka, India",
             "description": [
                 "Engaged in intensive training on full-stack development using Java, Spring Boot, and Spring Framework to build scalable enterprise solutions.",

@@ -31,7 +31,7 @@ export default function Home({ data }: HomeProps) {
                     </span>
                 </h1>
                 <div className="text-2xl md:text-3xl font-medium mb-6 h-10">
-                    <p className="m-0 p-0 text-gray-300">And, I am a&nbsp;
+                    <p className="m-0 p-0 text-gray-300">And, I am&nbsp;
                         <span className="text-green-300">
                             <ReactTyped
                                 strings={roles}
