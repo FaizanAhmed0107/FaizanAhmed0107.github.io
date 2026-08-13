@@ -84,19 +84,23 @@ const ExperienceSection = ({ data }: Props) => {
                         const isRightSide = index % 2 === 0;
 
                         const contentCard = (
-                            <div className={`bg-gray-800/50 backdrop-blur-sm border border-gray-700 p-6 rounded-lg shadow-xl ${!isRightSide ? 'md:text-right' : ''}`}>
-                                <div className={`flex items-center text-sm text-gray-400 mb-3 ${!isRightSide ? 'md:justify-end' : ''}`}>
-                                    <Calendar size={14} className="mr-2" /> {item.duration}
+                            <div className={`bg-gray-800/50 backdrop-blur-sm border border-gray-700 p-6 rounded-lg shadow-xl`}>
+                                <div className={`flex items-center text-sm text-gray-400 mb-3 ${!isRightSide ? 'md:flex-row-reverse' : ''}`}>
+                                    <Calendar size={14} className={isRightSide ? 'mr-2' : 'ml-2'} />
+                                    <span>{item.duration}</span>
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-1">{item.role}</h3>
-                                <div className={`flex items-center text-md text-green-300 mb-4 ${!isRightSide ? 'md:justify-end' : ''}`}>
-                                    <MapPin size={16} className="mr-2" /> {item.organization}
+                                <h3 className={`text-xl font-bold text-white mb-1 ${!isRightSide ? 'md:text-right' : ''}`}>
+                                    {item.role}
+                                </h3>
+                                <div className={`flex items-center text-md text-green-300 mb-4 ${!isRightSide ? 'md:flex-row-reverse' : ''}`}>
+                                    <MapPin size={16} className={isRightSide ? 'mr-2' : 'ml-2'} />
+                                    <span className={!isRightSide ? 'md:text-right' : ''}>{item.organization}</span>
                                 </div>
                                 <ul className="space-y-3 text-gray-300">
                                     {item.description.map((point, i) => (
-                                        <li key={i} className={`flex items-start ${!isRightSide ? 'md:flex-row-reverse md:text-right' : ''}`}>
-                                            <Cpu size={16} className={`text-green-400 mt-1 flex-shrink-0 ${!isRightSide ? 'ml-3' : 'mr-3'}`} />
-                                            <span>{point}</span>
+                                        <li key={i} className={`flex items-start ${!isRightSide ? 'md:flex-row-reverse' : ''}`}>
+                                            <Cpu size={16} className={`text-green-400 mt-1 flex-shrink-0 ${!isRightSide ? 'md:ml-3 mr-3 md:mr-0' : 'mr-3'}`} />
+                                            <span className={!isRightSide ? 'md:text-right' : ''}>{point}</span>
                                         </li>
                                     ))}
                                 </ul>
