@@ -32,7 +32,7 @@ Visit my portfolio at: **https://faizanahmed0107.github.io**
 
 ---
 
-###Contact
+### Contact
 
 Feel free to reach out to me for collaborations or job opportunities:
 
